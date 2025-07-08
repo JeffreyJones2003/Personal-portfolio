@@ -1,0 +1,69 @@
+.about-section {
+  background: #f7f7f7;
+  color: #333;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #203a43;
+  margin-top: 3rem;
+}
+
+.skill-icon {
+  height: 48px;
+  width: 48px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.skill-icon:hover {
+  transform: scale(1.1);
+}
+
+.skills-scroll {
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  padding-bottom: 8px;
+}
+
+.skills-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.skills-scroll::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+/* Better readability for cards */
+.card-body h6 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #203a43;
+}
+
+.card-body p,
+.card-body small {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}

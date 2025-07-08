@@ -1,0 +1,31 @@
+.home-section {
+  min-height: 100vh;
+  padding-top: 80px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+.highlight {
+  color: #00ffff;
+}
+
+.profile-img {
+  max-width: 280px;
+  border: 5px solid #ffffff33;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.social-links i {
+  font-size: 1.5rem;
+  color: #00ffff;
+  transition: 0.3s;
+}
+
+.social-links i:hover {
+  color: white;
+}

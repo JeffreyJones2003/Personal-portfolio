@@ -1,0 +1,16 @@
+.section-title {
+  font-weight: 700;
+  color: #203a43;
+}
+
+.project-card {
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}

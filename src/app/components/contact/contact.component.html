@@ -1,0 +1,20 @@
+<section id="contact" class="contact-section py-5">
+  <div class="container text-center">
+    <h2 class="section-title mb-4">📬 Get in Touch</h2>
+    <p class="lead mb-4">
+      Let’s build something great together! <br />
+      I’m open to collaborations, freelance work, and full-time roles.
+    </p>
+
+    <div class="row justify-content-center">
+      <div class="col-md-3 mb-3" *ngFor="let contact of contacts">
+        <div class="glass-card p-3 text-center">
+          <i [class]="contact.icon + ' fa-2x mb-2'"></i>
+          <p class="mb-0">
+            <a [href]="contact.link" target="_blank">{{ contact.text }}</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

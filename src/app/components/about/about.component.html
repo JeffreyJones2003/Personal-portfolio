@@ -1,0 +1,46 @@
+<section id="about" class="about-section py-5">
+  <div class="container text-center">
+    <h2 class="section-title">About Me</h2>
+    <p class="lead mt-3">
+      I’m a passionate Full Stack Developer with a strong foundation in Angular, Python, and Machine Learning. I love building scalable web applications and intuitive UIs.
+    </p>
+
+    <!-- Skills -->
+    <h4 class="mt-5 fw-bold">Technologies & Tools</h4>
+    <div class="skills-scroll mt-3 d-flex align-items-center justify-content-start overflow-auto px-2">
+      <div class="d-flex flex-nowrap gap-4 mx-auto">
+        <div *ngFor="let skill of skills" class="text-center">
+          <img [src]="skill.logo" [alt]="skill.name" class="skill-icon mb-2" />
+          <div class="small">{{ skill.name }}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Internships -->
+    <h4 class="mt-5 fw-bold">Internship Experience</h4>
+    <div class="row mt-3">
+      <div class="col-md-4" *ngFor="let internship of internships">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h6 class="fw-bold">{{ internship.company }}</h6>
+            <small class="text-muted">{{ internship.duration }}</small>
+            <p class="small mt-2">{{ internship.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <h4 class="mt-5 fw-bold">Certifications</h4>
+    <div class="row mt-3">
+      <div class="col-md-4" *ngFor="let cert of certifications">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h6 class="fw-bold">{{ cert.title }}</h6>
+            <p class="small text-muted">{{ cert.issuer }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

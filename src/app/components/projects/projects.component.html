@@ -1,0 +1,33 @@
+<section id="projects" class="projects-section py-5">
+  <div class="container">
+    <h2 class="text-center section-title mb-4">Projects</h2>
+
+    <ngb-carousel
+  [showNavigationArrows]="true"
+  [showNavigationIndicators]="true"
+  [interval]="5000"
+  [pauseOnHover]="true"
+  class="mt-4"
+>
+      <ng-template ngbSlide *ngFor="let project of projects">
+        <div class="card project-card mx-auto text-center" style="max-width: 500px;">
+          <img
+            [src]="project.image"
+            [alt]="project.title"
+            class="card-img-top p-4"
+            style="max-height: 200px; object-fit: contain;"
+          />
+
+          <div class="card-body">
+            <h5 class="card-title fw-bold">{{ project.title }}</h5>
+            <p class="card-text small text-muted">{{ project.description }}</p>
+            <div class="d-flex justify-content-center gap-3">
+              <a [href]="project.github" target="_blank" class="btn btn-outline-dark btn-sm">GitHub</a>
+              <a [href]="project.live" target="_blank" class="btn btn-primary btn-sm">Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+</section>
