@@ -1,0 +1,5 @@
+[[headers]]
+  for = "/assets/*.pdf"
+  [headers.values]
+    Content-Type = "application/pdf"
+    Content-Disposition = "attachment"
