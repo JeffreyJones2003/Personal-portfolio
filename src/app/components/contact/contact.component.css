@@ -1,11 +1,47 @@
 .contact-section {
   background-color: #0f172a;
-  padding: 4rem 0;
+  color: #e2e8f0;
+  padding: 80px 0;
   scroll-margin-top: 100px;
 }
 
-.contact-buttons a {
+.contact-section a {
+  color: #e2e8f0;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  color: var(--primary-color);
+}
+
+.btn-resume {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.4rem;
+  background-color: transparent;
+  color: #60a5fa;
+  border: 2px solid #60a5fa;
   border-radius: 25px;
-  font-size: 1rem;
-  padding: 0.5rem 1.25rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-resume:hover {
+  background-color: #60a5fa;
+  color: #0f172a;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  .contact-section p,
+  .contact-section .btn,
+  .btn-resume {
+    font-size: 0.95rem;
+  }
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
 }

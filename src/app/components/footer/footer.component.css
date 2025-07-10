@@ -1,12 +1,21 @@
-.footer {
+.footer-section {
   background-color: #0f172a;
-  border-top: 1px solid #1e293b;
+  color: #e2e8f0;
+  border-top: 1px solid #334155;
 }
 
-.social-icons a {
-  transition: color 0.3s;
+.footer-section .social-icons a {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-.social-icons a:hover {
-  color: #38bdf8; /* Light blue hover */
+.footer-section .social-icons a:hover {
+  background-color: #60a5fa;
+  color: #0f172a;
+  transform: translateY(-2px);
 }
