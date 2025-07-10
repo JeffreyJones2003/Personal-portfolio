@@ -1,16 +1,118 @@
-.section-title {
-  font-weight: 700;
-  color: #203a43;
+/* Section background */
+#projects {
+  background-color: #0f172a; /* Dark slate */
+  color: #e2e8f0;
+  scroll-margin-top: 100px;
 }
 
+/* Section heading */
+.section-title {
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: #f8fafc !important;
+}
+
+/* Carousel wrapper */
+.custom-carousel {
+  max-width: 1000px;
+  margin: auto;
+  border-radius: 16px;
+  background: #1e293b;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  padding: 2rem 1rem;
+}
+
+/* Card */
 .project-card {
-  border-radius: 12px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-  background: #fff;
-  overflow: hidden;
+  background-color: #1e293b;
+  border-radius: 16px;
+  max-width: 600px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  color: #f8fafc;
   transition: transform 0.3s ease;
+}
+
+.project-card h4 {
+  color: #f8fafc !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
+}
+
+/* Image */
+.project-img {
+  height: 180px;
+  max-width: 100%;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+/* Description */
+.project-description {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+/* Tech badges */
+.tech-stack {
+  margin-top: 0.5rem;
+}
+.tech-stack .badge {
+  background-color: #334155;
+  color: #f1f5f9;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  border-radius: 20px;
+  margin: 4px;
+}
+
+/* Buttons */
+.project-links a {
+  font-size: 0.9rem;
+  padding: 6px 16px;
+  border-radius: 25px;
+}
+.btn-outline-light {
+  border-color: #f8fafc;
+  color: #f8fafc;
+}
+.btn-outline-light:hover {
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  border: 1px solid #60a5fa;
+  color: #60a5fa;
+}
+.btn-outline-primary:hover {
+  background-color: #60a5fa;
+  color: #1e293b;
+}
+
+/* Carousel indicators */
+.custom-carousel ::ng-deep .carousel-indicators [data-bs-target] {
+  background-color: #94a3b8;
+}
+.custom-carousel ::ng-deep .carousel-indicators .active {
+  background-color: #38bdf8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-card {
+    padding: 1rem;
+    max-width: 100%;
+  }
+  .project-img {
+    height: 130px;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
 }

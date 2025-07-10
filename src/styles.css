@@ -1,24 +1,71 @@
-/* You can add global styles to this file, and also import other style files */
-/* Global styles */
-/* ✅ Put all imports first */
-/* ✅ Prebuilt Material Theme (only this is needed) */
-@import '@angular/material/prebuilt-themes/indigo-pink.css';
+/* styles.css - Global Reset and Customization */
 
-/* ✅ Your global styles below */
-body {
+/* ---------- CSS Variables for Colors ---------- */
+:root {
+  --primary-color: #00bcd4;
+  --dark-color: #212121;
+  --light-bg: #f5f5f5;
+  --text-color: #333333;
+  --heading-font: 'Poppins', sans-serif;
+  --body-font: 'Roboto', sans-serif;
+}
+
+/* ---------- Global Reset ---------- */
+* {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-
-
-
-/* @import "bootstrap-icons/font/bootstrap-icons.css";
-
-/* Your custom styles can go below */
-/* body {
-  font-family: 'Segoe UI', sans-serif;
+html, body {
+  font-family: var(--body-font);
+  color: var(--text-color);
+  background-color: var(--light-bg);
+  scroll-behavior: smooth;
 }
-html, body { height: 100%; } */
-/* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */ 
+
+/* ---------- Section Padding ---------- */
+main {
+  scroll-padding-top: 80px; /* prevent navbar overlap */
+}
+
+section {
+  padding: 80px 0;
+}
+
+/* ---------- Heading Styles ---------- */
+h2, h3, h4, h5 {
+  font-family: var(--heading-font);
+  color: var(--dark-color);
+}
+
+h2.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+/* ---------- Navbar Fix ---------- */
+body {
+  scroll-padding-top: 80px; /* Adjust according to navbar height */
+}
+
+/* ---------- Buttons ---------- */
+.btn-custom {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 30px;
+  padding: 10px 24px;
+}
+
+.btn-custom:hover {
+  background-color: #0097a7;
+}
+
+/* ---------- Utility ---------- */
+.mt-5 { margin-top: 3rem !important; }
+.mt-4 { margin-top: 2rem !important; }
+.mb-3 { margin-bottom: 1rem !important; }
+.text-center { text-align: center !important; }

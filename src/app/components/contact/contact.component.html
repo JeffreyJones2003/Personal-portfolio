@@ -1,20 +1,18 @@
-<section id="contact" class="contact-section py-5">
-  <div class="container text-center">
+<section id="contact" class="contact-section py-5 text-center text-light">
+  <div class="container">
     <h2 class="section-title mb-4">📬 Get in Touch</h2>
-    <p class="lead mb-4">
-      Let’s build something great together! <br />
-      I’m open to collaborations, freelance work, and full-time roles.
-    </p>
+    <p class="mb-4">Feel free to reach out through any platform below. I’m always open to discussing projects or opportunities!</p>
 
-    <div class="row justify-content-center">
-      <div class="col-md-3 mb-3" *ngFor="let contact of contacts">
-        <div class="glass-card p-3 text-center">
-          <i [class]="contact.icon + ' fa-2x mb-2'"></i>
-          <p class="mb-0">
-            <a [href]="contact.link" target="_blank">{{ contact.text }}</a>
-          </p>
-        </div>
-      </div>
+    <div class="d-flex justify-content-center flex-wrap gap-3 mt-4 contact-buttons">
+      <a href="mailto:jefffj10@gmail.com" class="btn btn-outline-light">
+        <i class="fas fa-envelope me-2"></i>Email
+      </a>
+      <a href="https://www.linkedin.com/in/jeffrey-jones-s-b2a84524b/" target="_blank" class="btn btn-outline-primary">
+        <i class="fab fa-linkedin me-2"></i>LinkedIn
+      </a>
+      <a href="https://github.com/JeffreyJones2003" target="_blank" class="btn btn-outline-secondary">
+        <i class="fab fa-github me-2"></i>GitHub
+      </a>
     </div>
   </div>
 </section>

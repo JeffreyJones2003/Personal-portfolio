@@ -1,19 +1,11 @@
 .contact-section {
-  background: #f7f9fc;
+  background-color: #0f172a;
+  padding: 4rem 0;
+  scroll-margin-top: 100px;
 }
 
-.glass-card {
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 12px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
-}
-
-.glass-card:hover {
-  transform: scale(1.05);
-}
-
-.section-title {
-  font-weight: 700;
-  color: #203a43;
+.contact-buttons a {
+  border-radius: 25px;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
 }

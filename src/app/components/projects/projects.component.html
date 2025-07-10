@@ -1,30 +1,28 @@
-<section id="projects" class="projects-section py-5">
-  <div class="container">
-    <h2 class="text-center section-title mb-4">Projects</h2>
+<section id="projects" class="py-5">
+  <div class="container custom-carousel">
+    <h2 class="section-title text-center mb-5">Projects</h2>
 
-    <ngb-carousel
-  [showNavigationArrows]="true"
-  [showNavigationIndicators]="true"
-  [interval]="5000"
-  [pauseOnHover]="true"
-  class="mt-4"
->
+    <ngb-carousel [interval]="3000" [pauseOnHover]="true" [showNavigationArrows]="true" [showNavigationIndicators]="true">
       <ng-template ngbSlide *ngFor="let project of projects">
-        <div class="card project-card mx-auto text-center" style="max-width: 500px;">
-          <img
-            [src]="project.image"
-            [alt]="project.title"
-            class="card-img-top p-4"
-            style="max-height: 200px; object-fit: contain;"
-          />
+        <div class="project-card text-center mx-auto">
+          <img [src]="project.image" alt="{{ project.title }}" class="project-img mb-3 rounded shadow-sm" />
 
-          <div class="card-body">
-            <h5 class="card-title fw-bold">{{ project.title }}</h5>
-            <p class="card-text small text-muted">{{ project.description }}</p>
-            <div class="d-flex justify-content-center gap-3">
-              <a [href]="project.github" target="_blank" class="btn btn-outline-dark btn-sm">GitHub</a>
-              <a [href]="project.live" target="_blank" class="btn btn-primary btn-sm">Live Demo</a>
-            </div>
+          <h4 class="fw-bold">{{ project.title }}</h4>
+          <p class="project-description mb-3">{{ project.description }}</p>
+
+          <!-- Tech Stack -->
+          <div class="tech-stack mb-3">
+            <span class="badge" *ngFor="let tech of project.tech">{{ tech }}</span>
+          </div>
+
+          <!-- Links -->
+          <div class="project-links d-flex justify-content-center gap-3">
+            <a [href]="project.github" target="_blank" class="btn btn-outline-light" title="View Code">
+              <i class="fab fa-github me-1"></i> GitHub
+            </a>
+            <a [href]="project.live" target="_blank" class="btn btn-outline-primary" title="Live Preview">
+              <i class="fas fa-external-link-alt me-1"></i> Live
+            </a>
           </div>
         </div>
       </ng-template>
