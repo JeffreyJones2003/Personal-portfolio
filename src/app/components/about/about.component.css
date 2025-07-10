@@ -1,25 +1,26 @@
 .about-section {
-  background: #f7f7f7;
-  color: #333;
+  background: #f8fafc;
+  color: #1e293b;
 }
 
 .section-title {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 700;
-  letter-spacing: -0.5px;
   margin-bottom: 1rem;
+  color: #1f2937;
 }
 
 h4 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  color: #203a43;
+  color: #1e293b;
   margin-top: 3rem;
 }
 
+/* Skill logos */
 .skill-icon {
-  height: 48px;
-  width: 48px;
+  height: 50px;
+  width: 50px;
   object-fit: contain;
   transition: transform 0.2s ease;
 }
@@ -37,33 +38,32 @@ h4 {
 .skills-scroll::-webkit-scrollbar {
   height: 6px;
 }
-
 .skills-scroll::-webkit-scrollbar-thumb {
-  background-color: #ccc;
+  background-color: #94a3b8;
   border-radius: 3px;
 }
 
-/* Better readability for cards */
+/* Card styles */
+.card {
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
 .card-body h6 {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 600;
-  color: #203a43;
+  color: #1e293b;
 }
 
 .card-body p,
 .card-body small {
   font-size: 0.95rem;
   line-height: 1.5;
-  color: #555;
-}
-
-.card {
-  border: none;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
+  color: #4b5563;
 }
